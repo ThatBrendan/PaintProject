@@ -3,11 +3,15 @@ package com.brendancode;
 public class Main {
     public static void main(String[] args) {
 
-       int paintGallonPerSquareFoot = 2;
+        int luckyNumber = (int) (Math.random() * 9);
+
+        System.out.println(luckyNumber);
+
         int costPerPaintGallon = 22;
-        int paintPerRoom = 8;
-        int squareFoot = 400;
+        int paintPerRoom = 6;
         int roomsInHouse = 8;
+        int budget = 2000;
+        boolean weatherIsNice = false;
 
         int costPerRoom = costPerPaintGallon * paintPerRoom;
         int costPerHouse = costPerRoom * roomsInHouse;
@@ -18,9 +22,20 @@ public class Main {
         System.out.println(quote);
         System.out.println(quoteForHouse);
 
+        if (budget > costPerHouse && weatherIsNice) {
+            System.out.println("Lets get painting!!!");
+        } else {
+            System.out.println("You'd need to think about it");
+        }
 
-        int luckyNumber = (int) (Math.random() * 9);
 
-        System.out.println(luckyNumber);
+        switch (roomsInHouse) {
+            case 0:
+                System.out.println("This is a caravan");
+                    break;
+            case 1,2,3:
+                System.out.println("This is decent");
+            break;
+        }
     }
 }
