@@ -7,7 +7,7 @@ public class Main {
         int costPerPaintGallon = 22;
         int paintPerRoom = 8;
         int squareFoot = 400;
-        int roomsInHouse = 6;
+        int roomsInHouse = 8;
 
         int costPerRoom = costPerPaintGallon * paintPerRoom;
         int costPerHouse = costPerRoom * roomsInHouse;
