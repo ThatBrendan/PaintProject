@@ -1,18 +1,29 @@
 package com.brendancode;
 
 public class Main {
+    public static int perCentage (int num) {
+        return (num * num)/100;
+
+    }
+
+
     public static void main(String[] args) {
 
         int weekOfTheMonth = (int) (Math.random() * 5);
+        int result;
+
+        result = perCentage(50);
+
+        System.out.println("You just got " + result);
 
         System.out.println("You have booked to have your house painted on the " + weekOfTheMonth + " week of the month");
 
         int costPerPaintGallon = 22;
         int paintPerRoom = 6;
         int budget = 2000;
+        int loan = 2500;
         boolean weatherIsNice = false;
         int roomsInHouse = 6;
-
 
         String [] typesOfPaint = {"Oil", "Acrylic", "Watercolor"};
         for( int i = 0; i < typesOfPaint.length; i++)  {
