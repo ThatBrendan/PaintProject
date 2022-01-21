@@ -13,9 +13,10 @@ public class Main {
         boolean weatherIsNice = false;
         int roomsInHouse = 6;
 
+
         String [] typesOfPaint = {"Oil", "Acrylic", "Watercolor"};
-        for (String i : typesOfPaint) {
-            System.out.println(i + " might be a suitable choice of colour for your building");
+        for( int i = 0; i < typesOfPaint.length; i++)  {
+            System.out.println(typesOfPaint[i] + " might be a suitable choice of colour for your building");
         }
 
         int costPerRoom = costPerPaintGallon * paintPerRoom;
