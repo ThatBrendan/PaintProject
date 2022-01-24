@@ -11,8 +11,8 @@ public class Main {
         costPerHouse (20,6, 6);
 
         String[] typesOfPaint = {"Oil", "Acrylic", "Watercolor"};
-        for (int i = 0; i < typesOfPaint.length; i++) {
-            System.out.println(typesOfPaint[i] + " might be a suitable choice of colour for your building");
+        for (String s : typesOfPaint) {
+            System.out.println(s + " might be a suitable choice of colour for your building");
         }
 
         switch (weekOfTheMonth) {
